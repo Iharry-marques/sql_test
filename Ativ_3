@@ -1,0 +1,26 @@
+CREATE TABLE aluno (codigo int, nome text, telefone text, cidade text);
+CREATE TABLE funcionarios (codigo int, nome text, endereco text, telefone text, cidade text, estado text,
+cep text, rg text, cpf text, salario number);
+ALTER TABLE aluno RENAME TO alunos;
+INSERT INTO alunos (codigo,nome,telefone,cidade) VALUES (1,'Fabio Marques','96484-9785','SP');
+SELECT * FROM alunos;
+INSERT INTO alunos (codigo,nome,telefone,cidade) VALUES (2,'Harry Marques','96484-7854','MG');
+SELECT * FROM alunos;
+INSERT INTO alunos (codigo,nome,telefone,cidade) VALUES (3,'José Buscapé','96587-4578','SZ');
+SELECT * FROM alunos;
+SELECT codigo,nome FROM alunos;
+SELECT nome,cidade FROM alunos;
+INSERT INTO alunos (codigo,nome,telefone,cidade) VALUES (3,'Toninho Diabo','96666-6666','AC');
+INSERT INTO alunos (codigo,nome,telefone,cidade) VALUES (4,'Pou Android','97845-1234','IO');
+INSERT INTO alunos (codigo,nome,telefone,cidade) VALUES (5,'Pitica Vi','97145-4578','SP');
+INSERT INTO alunos (codigo,nome,telefone,cidade) VALUES (6,'Cleitinho','97745-1234','SC');
+INSERT INTO alunos (codigo,nome,telefone,cidade) VALUES (7,'Marisa','98745-1124','NY');
+SELECT * FROM alunos;
+SELECT cidade,codigo,nome FROM alunos;
+INSERT INTO alunos (codigo,nome,telefone,cidade) VALUES (8,'Semnome da Silva','98462-5487','WQ');
+INSERT INTO funcionarios (nome,salario) VALUES ('Fabio Marques',7500);
+SELECT * FROM funcionarios;
+INSERT INTO funcionarios (codigo,nome,salario) VALUES ('1','Neymar Junior',117500);
+INSERT INTO funcionarios (codigo,nome,salario) VALUES ('2','Harry Marques',2500);
+INSERT INTO funcionarios (codigo,nome,salario) VALUES ('3','Toninho Diabo',3500);
+SELECT * FROM funcionarios;
